@@ -122,6 +122,18 @@ namespace QuickSort
         }
         static void Main(string[] args)
         {
+            // declaring the object of the class
+            Program myList = new Program();
+            //accept array elements
+            myList.input();
+            // calling the sorting function
+            // firts call to quick sort alogarithm
+            myList.q_sort(0, myList.GetSize() - 1);
+            //display sorted array
+            myList.display();
+            // to exit from the console
+            Console.WriteLine("\n\n Press Enter to exit. ");
+            Console.Read();
         }
     }
 }
